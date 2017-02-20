@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>6 months of Using React Native</title>
+    <title>6 Months of using React Native</title>
     <meta name="description" content="">
 
     <meta name="HandheldFriendly" content="True">
@@ -11,7 +11,7 @@
 
     <link rel="shortcut icon" href="../favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=913c21715d">
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=033bcea7e6">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
 
     <link rel="canonical" href="http://0.0.0.0:2368/engineering-at-elanic/">
@@ -20,14 +20,14 @@
     
     <meta property="og:site_name" content="Engineering at Elanic">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="6 months of Using React Native">
-    <meta property="og:description" content="Here at Elanic, we built our iOS app using react-native (RN). When we started 7 months ago, RN was still a relatively new framework and the decision to use it wasn't very clear cut. Ultimately, it came down to our need to launch an iOS app quickly and the ability">
+    <meta property="og:title" content="6 Months of using React Native">
+    <meta property="og:description" content="Here at Elanic, we built our iOS app using react-native (RN). When we started 7 months ago, RN was a relatively new framework and the decision to use it wasn't very clear cut. Ultimately, it came down to our need to launch an iOS app quickly and the ability for">
     <meta property="og:url" content="http://0.0.0.0:2368/engineering-at-elanic/">
     <meta property="article:published_time" content="2017-01-24T14:42:10.000Z">
-    <meta property="article:modified_time" content="2017-02-18T15:52:58.000Z">
+    <meta property="article:modified_time" content="2017-02-20T12:10:23.000Z">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="6 months of Using React Native">
-    <meta name="twitter:description" content="Here at Elanic, we built our iOS app using react-native (RN). When we started 7 months ago, RN was still a relatively new framework and the decision to use it wasn't very clear cut. Ultimately, it came down to our need to launch an iOS app quickly and the ability">
+    <meta name="twitter:title" content="6 Months of using React Native">
+    <meta name="twitter:description" content="Here at Elanic, we built our iOS app using react-native (RN). When we started 7 months ago, RN was a relatively new framework and the decision to use it wasn't very clear cut. Ultimately, it came down to our need to launch an iOS app quickly and the ability for">
     <meta name="twitter:url" content="http://0.0.0.0:2368/engineering-at-elanic/">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Sreejith Pp">
@@ -53,11 +53,11 @@
         "url": "http://0.0.0.0:2368/author/sreejith/",
         "sameAs": []
     },
-    "headline": "6 months of Using React Native",
+    "headline": "6 Months of using React Native",
     "url": "http://0.0.0.0:2368/engineering-at-elanic/",
     "datePublished": "2017-01-24T14:42:10.000Z",
-    "dateModified": "2017-02-18T15:52:58.000Z",
-    "description": "Here at Elanic, we built our iOS app using react-native (RN). When we started 7 months ago, RN was still a relatively new framework and the decision to use it wasn&#x27;t very clear cut. Ultimately, it came down to our need to launch an iOS app quickly and the ability",
+    "dateModified": "2017-02-20T12:10:23.000Z",
+    "description": "Here at Elanic, we built our iOS app using react-native (RN). When we started 7 months ago, RN was a relatively new framework and the decision to use it wasn&#x27;t very clear cut. Ultimately, it came down to our need to launch an iOS app quickly and the ability for",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://0.0.0.0:2368"
@@ -99,34 +99,33 @@
     <article class="post">
 
         <header class="post-header">
-            <h1 class="post-title">6 months of Using React Native</h1>
+            <h1 class="post-title">6 Months of using React Native</h1>
             <section class="post-meta">
                 <time class="post-date" datetime="2017-01-24">24 January 2017</time> 
             </section>
         </header>
 
         <section class="post-content">
-            <p>Here at Elanic, we built our iOS app using react-native (RN). When we started 7 months ago, RN was still a relatively new framework and the decision to use it wasn't very clear cut. Ultimately, it came down to our need to launch an iOS app quickly and the ability for the rest of the team to contribute code. After 4 months of learning and building, we released our iOS app in November. Today, I'd like to share some of the lessons we learned using RN to develop an Indian e-commerce application.</p>
+            <p>Here at Elanic, we built our iOS app using react-native (RN). When we started 7 months ago, RN was a relatively new framework and the decision to use it wasn't very clear cut. Ultimately, it came down to our need to launch an iOS app quickly and the ability for the rest of the team to contribute code. After 4 months of learning and building, we released our iOS app in November. Today, I'd like to share some of the lessons we learned using RN to develop an Indian e-commerce application.  </p>
 
 <h3 id="challenges">Challenges</h3>
 
-<p>We already had a <a href="https://play.google.com/store/apps/details?id=in.elanic.app&amp;hl=en">native android app</a> so our primary concern was whether the react native ecosystem was mature enough to support all the external support SDKs that we use such as AppsFlyer, MixPanel, Social login (FB, Google), PayTM, etc. Luckily, there were plugins available for most of our needs except Paytm and AppsFlyer (which we decided to <a href="https://github.com/elanic-tech">build</a> ourselves).</p>
+<p>We already had a native android app so our primary concern was whether the react native ecosystem was mature enough to support all the external support SDKs that we use such as AppsFlyer, MixPanel, Social login (FB, Google), PayTM, etc. Luckily, there were plugins available for most of our needs except Paytm and AppsFlyer (which we decided to build ourselves).</p>
 
-<p>As for performance, the standard RN constructs were performant enough for our needs. By using some flexbox and ListView tricks, we could render <a href="https://github.com/yelled3/react-native-grid-example">a fairly performant grid view</a>.</p>
+<p>As for performance, the standard RN constructs were performant enough for our needs. By using some flexbox and ListView tricks, we could render a fairly performant grid view.</p>
 
-<p>Confident about the RN ecosystem, we set out to develop our iOS app. It took us almost 5 months to get from idea to product and, after a lot of breaking things, we finally launched our app in November.</p>
+<p>Confident about the RN ecosystem, we set out to develop our iOS app. It took us almost 5 months to get from idea to product and, after a lot of moving fast and breaking things, we finally launched our app in November.</p>
 
 <h3 id="codestructure">Code Structure</h3>
 
-<p>After a lot of refactoring, we settled on a one-way data flow using redux as a central state for the app. </p>
+<p>After a fair bit of refactoring, we settled on a one-way data flow using redux as a central state for the app.</p>
 
-<ul>
-<li>The views would listen for user interactions and dispatch <a href="https://github.com/gaearon/redux-thunk">thunks</a> (we're now moving business logic to <a href="https://github.com/redux-saga/redux-saga">sagas</a>).</li>
-<li>The thunks would asynchronously handle network requests and dispatch the necessary actions to change state.</li>
-<li>The actions would trigger the corresponding reducers which would update the state.</li>
-</ul>
-
-<p>We use Immutable.js for the central state and the benefits that their persistent immutable objects give us <a href="https://facebook.github.io/react/docs/optimizing-performance.html#using-immutable-data-structures">works nicely with the react rendering logic</a> as they allow us to track state changes across the app cheaply (by reference comparison) and update only those elements that have changed.</p>
+<ol>
+<li>The views would listen for user interactions and dispatch thunks (we're now moving business logic to sagas).  </li>
+<li>The thunks would asynchronously handle network requests and dispatch the necessary actions to change state.  </li>
+<li>The actions would trigger the corresponding reducers which would update the state. <br>
+We use Immutable.js for the central state and the benefits that their persistent immutable objects give us works nicely with the react rendering logic as they allow us to track state changes across the app cheaply (by reference comparison) and update only those elements that have changed.  </li>
+</ol>
 
 <h3 id="automating">Automating</h3>
 
@@ -135,22 +134,21 @@
 <ol>
 <li>Adding a new screen/component.  </li>
 <li>Adding a new branch to the app state and associated actions/reducers.  </li>
-<li>Compiling the app and deploying to beta and later promoting to production.</li>
+<li>Compiling the app and deploying to beta and later promoting to production. <br>
+We handled 1 and 2 by adding custom shell scripts to automate new file additions. 3 was handled with the help of fastlane and codepush.  </li>
 </ol>
-
-<p>We handled 1 and 2 by adding custom shell scripts to automate new file additions. 3 was handled with the help of <a href="https://dbanck.svbtle.com/deploying-a-react-native-app-with-fastlane">fastlane</a> and <a href="https://github.com/Microsoft/react-native-code-push">codepush</a>.</p>
 
 <h3 id="buildanddeploycycle">Build and deploy cycle</h3>
 
-<p>Using fastlane allowed us to automate the deploy of new versions so we could focus on building the app. It remains an invaluable tool when we add new native features but for all non-native features, we use CodePush.</p>
+<p>Fastlane allowed us to automate the deploy of new versions so we could focus on building the app. It remains an invaluable tool when we add new native features but for all non-native features, we use CodePush.</p>
 
-<p>CodePush allowed us to push new features directly to test devices and then, to our users directly. This was invaluable in our early versions as we worked around the clock to push and deploy bug fixes to live devices. Even right now, CodePush allows us to build new features and push those features directly to devices (without waiting for an app store review). By using a suitable semantic versioning scheme, we can track the segmentation of our users and deploy accordingly.</p>
+<p>CodePush allowed us to push new features to test devices and then, to our users directly. This was invaluable in our early versions as we worked around the clock to push and deploy bug fixes to live devices. Today, CodePush is what allows us to push new features directly to devices (without waiting for an app store review). By using a suitable semantic versioning scheme, we can track the segmentation of our users and deploy accordingly.  </p>
 
 <h3 id="future">Future</h3>
 
-<p>Recently, we've been working on developing a web app from the same codebase as we can re-use most of the business logic and states/reducers. The only difference would be the view logic which would be suited for the web. Using web-pack, we can selectively compile for web and iOS by naming the file *.ios.js or *.web.js to compile it for ios or the web. Thus differing in only the view logic and the build process, the same developers can contribute code to both web and mobile. </p>
+<p>Recently, we've been working on developing a web app from the same codebase as we can re-use most of the business logic and states/reducers. The only difference would be the view logic which would be suited for the web. Using web-pack, we can selectively compile for web and iOS by naming the file *.web.js or *.ios.js. Thus differing in only the view logic and the build process, the same developers can contribute code to both web and mobile.</p>
 
-<p>So that's been the story of our experience with React Native. I hope our mistakes and choices can help others make better decisions. If you're interested, we're on the lookout for some good React developers so do <a href="https://angel.co/elanic/jobs">apply</a>.</p>
+<p>So that's been the story of our experience with React Native. I hope our mistakes and choices can help others make better decisions. We're on the lookout for some good React developers so do apply if you’re interested.</p>
         </section>
 
         <footer class="post-footer">
@@ -173,7 +171,7 @@
 
             <section class="share">
                 <h4>Share this post</h4>
-                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=6%20months%20of%20Using%20React%20Native&amp;url=http://0.0.0.0:2368/engineering-at-elanic/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=6%20Months%20of%20using%20React%20Native&amp;url=http://0.0.0.0:2368/engineering-at-elanic/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
                 <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://0.0.0.0:2368/engineering-at-elanic/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
@@ -204,7 +202,7 @@
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     
-    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=913c21715d"></script>
-    <script type="text/javascript" src="../assets/js/index.js?v=913c21715d"></script>
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=033bcea7e6"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=033bcea7e6"></script>
 
 </body>
