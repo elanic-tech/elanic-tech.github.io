@@ -11,7 +11,7 @@
 
     <link rel="shortcut icon" href="../favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=033bcea7e6">
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=363a00674a">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
 
     <link rel="canonical" href="http://0.0.0.0:2368/engineering-at-elanic/">
@@ -24,7 +24,7 @@
     <meta property="og:description" content="Here at Elanic, we built our iOS app using react-native (RN). When we started 7 months ago, RN was a relatively new framework and the decision to use it wasn't very clear cut. Ultimately, it came down to our need to launch an iOS app quickly and the ability for">
     <meta property="og:url" content="http://0.0.0.0:2368/engineering-at-elanic/">
     <meta property="article:published_time" content="2017-01-24T14:42:10.000Z">
-    <meta property="article:modified_time" content="2017-02-20T12:10:23.000Z">
+    <meta property="article:modified_time" content="2017-02-22T07:33:37.000Z">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="6 Months of using React Native">
     <meta name="twitter:description" content="Here at Elanic, we built our iOS app using react-native (RN). When we started 7 months ago, RN was a relatively new framework and the decision to use it wasn't very clear cut. Ultimately, it came down to our need to launch an iOS app quickly and the ability for">
@@ -56,7 +56,7 @@
     "headline": "6 Months of using React Native",
     "url": "http://0.0.0.0:2368/engineering-at-elanic/",
     "datePublished": "2017-01-24T14:42:10.000Z",
-    "dateModified": "2017-02-20T12:10:23.000Z",
+    "dateModified": "2017-02-22T07:33:37.000Z",
     "description": "Here at Elanic, we built our iOS app using react-native (RN). When we started 7 months ago, RN was a relatively new framework and the decision to use it wasn&#x27;t very clear cut. Ultimately, it came down to our need to launch an iOS app quickly and the ability for",
     "mainEntityOfPage": {
         "@type": "WebPage",
@@ -110,9 +110,9 @@
 
 <h3 id="challenges">Challenges</h3>
 
-<p>We already had a native android app so our primary concern was whether the react native ecosystem was mature enough to support all the external support SDKs that we use such as AppsFlyer, MixPanel, Social login (FB, Google), PayTM, etc. Luckily, there were plugins available for most of our needs except Paytm and AppsFlyer (which we decided to build ourselves).</p>
+<p>We already had a native android <a href="https://play.google.com/store/apps/details?id=in.elanic.app&amp;hl=en">app</a> so our primary concern was whether the react native ecosystem was mature enough to support all the external support SDKs that we use such as AppsFlyer, MixPanel, Social login (FB, Google), PayTM, etc. Luckily, there were plugins available for most of our needs except Paytm and AppsFlyer (which we decided to <a href="https://github.com/elanic-tech">build</a> ourselves).</p>
 
-<p>As for performance, the standard RN constructs were performant enough for our needs. By using some flexbox and ListView tricks, we could render a fairly performant grid view.</p>
+<p>As for performance, the standard RN constructs were performant enough for our needs. One issue was the grid view required to support variable-width views on our home page. However, By using some flexbox and ListView tricks, we were able to render <a href="https://github.com/yelled3/react-native-grid-example">a fairly performant grid view</a>.</p>
 
 <p>Confident about the RN ecosystem, we set out to develop our iOS app. It took us almost 5 months to get from idea to product and, after a lot of moving fast and breaking things, we finally launched our app in November.</p>
 
@@ -121,10 +121,10 @@
 <p>After a fair bit of refactoring, we settled on a one-way data flow using redux as a central state for the app.</p>
 
 <ol>
-<li>The views would listen for user interactions and dispatch thunks (we're now moving business logic to sagas).  </li>
+<li>The views would listen for user interactions and dispatch <a href="https://github.com/gaearon/redux-thunk">thunks</a> (we're now moving business logic to <a href="https://github.com/redux-saga/redux-saga">sagas</a>).  </li>
 <li>The thunks would asynchronously handle network requests and dispatch the necessary actions to change state.  </li>
 <li>The actions would trigger the corresponding reducers which would update the state. <br>
-We use Immutable.js for the central state and the benefits that their persistent immutable objects give us works nicely with the react rendering logic as they allow us to track state changes across the app cheaply (by reference comparison) and update only those elements that have changed.  </li>
+We use Immutable.js for the central state and the benefits that their persistent immutable objects give us works nicely with <a href="https://facebook.github.io/react/docs/optimizing-performance.html#using-immutable-data-structures">the react rendering logic</a> as they allow us to track state changes across the app cheaply (by reference comparison) and update only those elements that have changed.</li>
 </ol>
 
 <h3 id="automating">Automating</h3>
@@ -135,7 +135,7 @@ We use Immutable.js for the central state and the benefits that their persistent
 <li>Adding a new screen/component.  </li>
 <li>Adding a new branch to the app state and associated actions/reducers.  </li>
 <li>Compiling the app and deploying to beta and later promoting to production. <br>
-We handled 1 and 2 by adding custom shell scripts to automate new file additions. 3 was handled with the help of fastlane and codepush.  </li>
+We handled 1 and 2 by adding custom shell scripts to automate new file additions. 3 was handled with the help of <a href="https://github.com/fastlane/fastlane">fastlane</a> and <a href="https://microsoft.github.io/code-push/">CodePush</a>.  </li>
 </ol>
 
 <h3 id="buildanddeploycycle">Build and deploy cycle</h3>
@@ -202,7 +202,7 @@ We handled 1 and 2 by adding custom shell scripts to automate new file additions
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     
-    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=033bcea7e6"></script>
-    <script type="text/javascript" src="../assets/js/index.js?v=033bcea7e6"></script>
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=363a00674a"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=363a00674a"></script>
 
 </body>
